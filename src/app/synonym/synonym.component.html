@@ -1,0 +1,8 @@
+<input type="text"
+       [formControl]="synonymInput"
+       placeholder="synonym...">
+<div id="tooltip" *ngIf="wordList.length">
+  <ul>
+    <li *ngFor="let word of wordList" (click)="selectOptionalWord($event)">{{word.word}}</li>
+  </ul>
+</div>

@@ -1,0 +1,42 @@
+:host {
+  background-color: #f1f0f0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.editor-block {
+  width: 600px;
+  flex-grow: 1;
+}
+
+.wrapper {
+  background-color: #fff;
+  border: 1px solid #e4dede;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.file {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.file:focus {
+  outline-width: 0;
+}
+
+.placeholder {
+  position: absolute;
+  top: 0;
+  padding: 1.25rem 0.8rem 1rem 0.5rem;
+  z-index: 1;
+  color: #6c757d;
+  opacity: 0.75;
+}

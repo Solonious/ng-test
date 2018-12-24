@@ -1,0 +1,14 @@
+<div class="editor-block"></div>
+<div class="wrapper editor-block">
+  <div #editor
+       id="editor"
+       class="file"
+       contenteditable="true"
+       (blur)="onBlur()"
+       (click)="execute()"
+       (focus)="onEditorFocus()"
+  ></div>
+  <span *ngIf="!hidePlaceholder" class="placeholder">{{placeholder}}</span>
+
+</div>
+<div class="editor-block"></div>

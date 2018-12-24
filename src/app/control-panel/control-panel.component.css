@@ -1,0 +1,39 @@
+:host {
+  background-color: #fff;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 5px;
+}
+
+.format-actions {
+  width: 350px;
+}
+
+button + button {
+  margin-left: 5px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.synonym-container {
+  display: flex;
+  justify-content: center;
+}
+
+.synonym {
+  font-size: .7rem;
+  padding: 0 3px 0 6px;
+}
+
+.active {
+  background: #f1f0f0;
+}
